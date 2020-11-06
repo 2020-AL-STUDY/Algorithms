@@ -14,3 +14,6 @@ Solving algorithms - BaekJoon, Programmers, LeetCode etc.
 - 안 해올시 벌금 2,000원
 
 ![https://user-images.githubusercontent.com/39149858/95650473-e42cd580-0b1e-11eb-91b2-a1d3d049de9f.png](https://user-images.githubusercontent.com/39149858/95650473-e42cd580-0b1e-11eb-91b2-a1d3d049de9f.png)
+
+### TWL(Today We Learned)
+20.10.10 [https://www.notion.so/2020-10-10-24a960e4625d4f3499bad7e97af4d9b7]
