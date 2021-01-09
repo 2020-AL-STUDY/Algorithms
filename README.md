@@ -21,3 +21,5 @@ Solving algorithms - BaekJoon, Programmers, LeetCode etc.
 20.10.31 https://www.notion.so/2020-10-31-6734efff4a3e45379dadc57d09a897f4
 
 20.11.07 https://www.notion.so/2020-11-7-bb7add620aa24823b02b4fdbfedcf6ee
+
+more: https://www.notion.so/fd6677a623394d4d9e9c5390a4cee710?v=7338d203de1f4f38886ce256596fc542
