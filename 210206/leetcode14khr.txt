@@ -1,0 +1,22 @@
+class Solution {
+    public String longestCommonPrefix(String[] strs) {
+     
+	        if(strs.length==0){
+                return "";
+            }
+        String word=strs[0];//초기화
+	        for(int j=0; j<strs[0].length(); j++) {
+	        	word= word.substring(0,strs[0].length()-j);
+	        	System.out.println(word);
+	        	 for(int i=0; i<strs.length; i++) {
+	 	        	
+	 				if(!strs[i].startsWith(word)) {
+	 					break;//첫줄 for문으로 감
+	 				}else if(i==strs.length-1) {
+	 					return word;
+	 				}
+	 			}
+	        }
+        return "";
+    }
+}
