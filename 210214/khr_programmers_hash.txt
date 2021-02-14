@@ -1,0 +1,30 @@
+import java.util.*;
+class Solution {
+    
+    public String solution(String[] participant, String[] completion) {
+        String answer = "";
+        Map<String, Integer> ht = new HashMap<>();
+        for(int i=0; i<participant.length;i++){
+            if(ht.containsKey(participant[i])){
+                ht.put(participant[i],ht.get(participant[i])+1);
+            }else{
+                ht.put(participant[i],1);   
+            }
+                        
+        }
+        
+       for(int i=0; i<completion.length;i++){
+                   if(ht.containsKey(completion[i])){
+                       ht.put(completion[i],ht.get(completion[i])-1);
+                   }
+       } 
+        
+        for(int i=0; i<participant.length;i++){
+                if(ht.get(participant[i])==1){
+                    System.out.println(answer);
+                    answer= participant[i];
+                }
+        }
+        return answer;
+    }
+}
