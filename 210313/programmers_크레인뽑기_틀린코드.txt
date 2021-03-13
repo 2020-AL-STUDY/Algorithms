@@ -1,0 +1,29 @@
+def countAnswer(basket):
+    count=1
+    print(basket)
+    for i in range(len(basket)):
+        if i!=len(basket)-1:
+            if basket[i]==basket[i+1]:
+                count+=1#사라진 인형 개수     
+                basket=basket[:i+1]
+    return count
+
+def solution(board, moves):
+    answer = 0
+    print(len(board[0]))
+    #basket = [0 for i in range(len(board[0]))]
+    basket=[]
+    for i in range(len(board[0])):#board 가로 길이만큼
+        for j in range(len(moves)):#바꿔야 될수도..
+            m = moves[j]
+            if board[i][m-1] > 0:#j-1이 열의 인덱스
+                #인형이 들어있네
+                moves[j]=0#인형 꺼냈으니까 moves에서 없앰
+                basket.append(board[i][m-1])#바구니로 이동
+                answer+=countAnswer(basket)
+                board[i][m-1]=0#인형 꺼냄
+            elif board[i][j-1] == 0:#인형이 없네
+                if i==len(board[0])-1:
+                    moves.pop(0)#아무것도 일어나지 않음
+                    #이 열은 텅 비어 있는 열이다.
+    return answer
